@@ -96,6 +96,7 @@ exports.PDF2img = async (input, output, options = {}) => {
         }
         await watermark.addWatermarks(pages, options);
         await effect.addEffects(pages, options);
+        return pages;
     }
 
 }
